@@ -8,7 +8,11 @@
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="css/custom.css">
       <link rel="stylesheet" href="css/slider_video.css">
-      <title>Hello, world!</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet"  href="lightslider/src/css/lightslider.css"/>
+      <title>gooddoor</title>
    </head>
    <body class="bg-light">
       <!--Navbar Start-->
@@ -90,7 +94,7 @@
                                 Join the Green Door List to be the FIRST <br>
                                 to know about our offers, deals, & more! 
                                 </div>
-                                <div class="d-flex align-items-center pl-3 pr-3" style="">
+                                <div class="d-flex align-items-center pl-3 pr-3">
                                 <a class="btn btn-info rounded text-white zilaslab-medium">SIGN UP NOW</a>
                                 </div>
                             </div>
@@ -106,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="flex-fill bd-highlight" style="text-align: center;">
-                                    <img src="./images/daily_deals.png" class="daily_deal_place" style="" alt="...">
+                                    <img src="./images/daily_deals.png" class="daily_deal_place" alt="...">
                                 </div>
                                 <div class="flex-fill bd-highlight">
                                     <div class="float-right social" style="padding-right: 20px;">
@@ -148,29 +152,616 @@
         <!--Daily Deals Tricker Ended-->
 
         <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/slider_shape.png') repeat-x top; height: 300px;">
+        <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/slider_shape.png') repeat-x top; height: auto;">
             <div class="row pt-5">
-                    <div class="col text-center">
-                        <a href="#" class="btn btn-large p-3 text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SEE ALL DEALS</a>
-                    </div>
+                <div class="col text-center">
+                    <a href="#" class="btn btn-large p-3 text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SEE ALL DEALS</a>
+                </div>
                 
             </div>
             <div class="row pt-5">
-                    <div class="col text-center">
-                        <p class="h2">WEEKLY STAFF PICKS</p>
+                <div class="col text-center">
+                    <p class="h2">WEEKLY STAFF PICKS</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="container">
+                        <div class="carousel slide multi-item-carousel" id="theCarousel">
+                          <div class="carousel-inner row w-100 mx-auto">
+                            <div class="carousel-item active col-md-4">
+                              <img src="images/offer/1.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/2.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/3.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/1.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/2.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-larg float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/3.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/1.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                            <div class="carousel-item col-md-4">
+                              <img src="images/offer/2.png" class="img-fluid mx-auto d-block">
+                              <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-large text-white float-left">Jess OG</a>
+                                <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                              </div>
+                            </div>
+                          </div>
+                          <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                      </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            
+            
+        </div>
+        <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
+            <div class="row pt-5">
+                <div class="col text-center">
+                    <p class="h2">Check out all staff picks.</p>
+                    <a href="#" class="btn btn-large p-3 text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SEE ALL DEALS</a>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="parallax-bg" style="background-image:url(./images/offer/abacus-about-finance-fullwidth-bg.jpg)" data-swiper-parallax="-23%"></div>
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"  style="transition-duration: 0ms;
+                    transform: translate3d(800px, 10px, 0px);">
+                        <div class="title" data-swiper-parallax="-300">Slide 1</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                            quis feugiat.</p>
+                        </div>
                     </div>
-                
+                    <div class="swiper-slide">
+                        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0">Slide 2</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                            quis feugiat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="transition-duration: 0ms;
+                    transform: translate3d(800px, 10px, 0px);">
+                        <div class="title" data-swiper-parallax="-300">Slide 3</div>
+                        <div class="subtitle" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text" data-swiper-parallax="-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                            quis feugiat.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
             </div>
         </div>
         <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
+            <div class="row pt-5">
+                <div class="col text-center">
+                    <p class="h2">FEATURED BUNDLES OF THE MONTH.</p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="container">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel_two">
+                      <div class="carousel-inner row w-100 mx-auto carousel-image-border">
+                        <div class="carousel-item active col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-larg float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large text-white float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; padding-bottom: 15px;">
+            <div class="col pt-5 text-center">
+                <p class="h2">Check out our bundles for details.</p>
+                <a href="#" class="btn btn-large p-3 text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SEE ALL BUNDLES</a>
+            </div>
+        </div>
+        <!-- <hr class="hr"> -->
+        <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
+            <div class="row">
+                <!-- Swiper -->
+                <div class="swiper-container" style="background-color: #fff;">
+                    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./images/offer/full_image.png); background-repeat: no-repeat; object-fit: cover;
+                    object-position: top;    height: 100%;">
+                        <div class="title color-black" style="padding-top: 15rem!important;" data-swiper-parallax="-300">MKX Carts</div>
+                        <div class="subtitle color-black" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text color-black" data-swiper-parallax="-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                            quis feugiat.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image:url(./images/offer/full_image.png); background-repeat: no-repeat; object-fit: cover;
+                    object-position: top;    height: 100%;">
+                        <div class="title color-black" style="padding-top: 15rem!important;" data-swiper-parallax="-300">MKX Carts</div>
+                        <div class="subtitle color-black" data-swiper-parallax="-200">Subtitle</div>
+                        <div class="text color-black" data-swiper-parallax="-100">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                            felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                            magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                            quis feugiat.</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Navigation -->
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
+        </div>
+        <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
+            <div class="row pt-1">
+                <!-- Swiper -->
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(./images/offer/full_image.png); background-repeat: no-repeat; object-fit: cover;
+                        object-position: top;    height: 100%;">
+                            <div class="title color-black" style="padding-top: 15rem!important;" data-swiper-parallax="-300">MKX Carts</div>
+                            <div class="subtitle color-black" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text color-black" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                                felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                                magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                                quis feugiat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(./images/offer/full_image.png); background-repeat: no-repeat; object-fit: cover;
+                        object-position: top;    height: 100%;">
+                            <div class="title color-black" style="padding-top: 15rem!important;" data-swiper-parallax="-300">MKX Carts</div>
+                            <div class="subtitle color-black" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text color-black" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                                felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                                magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                                quis feugiat.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="background-image:url(./images/offer/full_image.png); background-repeat: no-repeat; object-fit: cover;
+                        object-position: top;    height: 100%;">
+                            <div class="title color-black" style="padding-top: 15rem!important;" data-swiper-parallax="-300">MKX Carts</div>
+                            <div class="subtitle color-black" data-swiper-parallax="-200">Subtitle</div>
+                            <div class="text color-black" data-swiper-parallax="-100">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit, sit amet faucibus
+                                felis iaculis nec. Nulla laoreet justo vitae porttitor porttitor. Suspendisse in sem justo. Integer laoreet
+                                magna nec elit suscipit, ac laoreet nibh euismod. Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec, tincidunt ut libero. Aenean feugiat non eros
+                                quis feugiat.</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                </div>                
+            </div>
+        </div>
+        <!--Daily Deals Tricker Ended-->
+        <!--Daily Deals Tricker Started-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff;">
+            <div class="row pt-5">
+                <div class="col text-center">
+                    <p class="h2">ACCESSORIES.</p>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="container">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel_three">
+                      <div class="carousel-inner row w-100 mx-auto carousel-image-border">
+                        <div class="carousel-item active col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small  pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-larg float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                          <div class="img-caption pt-2">
+                            <a href="#" class="btn btn-large text-white float-left">Jess OG</a>
+                            <a href="#" class="btn btn-small pt-1 text-white float-right" style=" background-color: #AFCB37; margin-right: 19px;">Go Now</a>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col pt-5 text-center pb-5">
+                <p class="h2">We have all you need.</p>
+                <a href="#" class="btn btn-large p-1 text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SEE MORE ACCESSORIES</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!--Daily Deals Tricker Ended-->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #236DAF; padding-bottom: 15px;">
+            <div class=" pt-5 text-center">
+                <img src="images/offer/rating.png" alt="ratting image" \>
+                <p class="h2 color-white" style="font-size: 20px;">Leave us a review and tell us how we did!</p>
+                
+            </div>
+            <div class="container">
+                <div class="row text-center pt-3 pb-5">
+                    <div class="col"><a href="#"><img src="images/weedmaps.png" alt="map" \></a></div>
+                    <div class="col"><a href="#"><img src="images/google_maps.png" alt="map" \></a></div>
+                    <div class="col"><a href="#"><img src="images/leafly.png" alt="map" \></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- follow now start -->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; padding-bottom: 15px;">
+            <div class="container">
+                <div class="row text-center pt-3 pb-5">
+                    <div class="col">
+                        <div style="display: block; overflow: hidden; clear: both;">
+                            <span class="float-left">STAY UPDATED WITH GREEN DOOR ON <img src="images/instagram.png"></span>
+                        <a href="#" class="btn btn-large p-1 text-white float-right" style="letter-spacing: 2px; background-color: #000;">FOLLOW NOW</a>
+                        
+                        </div>
+                        <div class="item pt-5">
+                            <ul id="content-slider" class="content-slider">
+                                <li>
+                                    <img src="images/small_slider/1.png" alt="slider" \>
+                                </li>
+                                <li>
+                                    <img src="images/small_slider/2.png" alt="slider" \>
+                                </li>
+                                <li>
+                                    <img src="images/small_slider/3.png" alt="slider" \>
+                                </li>
+                                <li>
+                                    <img src="images/small_slider/4.png" alt="slider" \>
+                                </li>
+                                <li>
+                                    <img src="images/small_slider/5.png" alt="slider" \>
+                                </li>
+                                <li>
+                                    <img src="images/small_slider/6.png" alt="slider" \>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+        <!-- follow now end -->
+        <!-- follow now start -->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff; padding-bottom: 15px;">
+            <div class="container">
+                <div class="row text-center pt-3">
+                    <div class="col">
+                        <div style="display: block; overflow: hidden; clear: both;">
+                            <span class="float-left">GREEN DOOR NEWS</span>
+                        <a href="#" class="btn btn-large p-1 text-white float-right" style="letter-spacing: 2px; background-color: #000;">SEE ALL</a>
+                        
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- follow now end -->
+        <!-- follow now start -->
+        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff; padding-bottom: 15px;">
+            <div class="container">
+                <div class="row text-center pb-5">
+                    <div class="col">
+                        <div class="item-card pt-5">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="images/offer/1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <a href="">TRUST ME, THIS IS ONE GREEN DOOR</a>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-large p-1 text-white" style="letter-spacing: 2px; background-color: #EF3622;">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item-card pt-5">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="images/offer/1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <a href="">TRUST ME, THIS IS ONE GREEN DOOR</a>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-large p-1 text-white" style="letter-spacing: 2px; background-color: #AFCC38;">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="item-card pt-5">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="images/offer/1.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <a href="">TRUST ME, THIS IS ONE GREEN DOOR</a>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-large p-1 text-white" style="letter-spacing: 2px; background-color: #236DAF;">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- follow now end -->
+        <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/background_image.jpg') repeat-x top; height: auto; min">
+          <div class="row pt-lg-5 pb-lg-5">
+              <div class="col text-center">
+                <p class="h2 color-white" style="line-height: 3rem;">JOIN THE GREEN DOOR LIST TO BE THE FIRST <br>
+                  TO KNOW ABOUT OUR OFFERS, DEALS, AND MORE</p>
+                  <a href="#" class="btn btn-large p-1  text-white" style="letter-spacing: 2px; background-color: #AFCB37;">SIGN UP NOW</a>
+              </div>
+            </div>
+        </div>
+        <!-- footer start -->
+        <footer>
+          <div class="container-fluid zilaslab-medium font-24" style="background: #231F20; height: auto;">
+            <div class="container">
+              <div class="row pt-5 pb-2 color-white">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                  <div>
+                    <img style="float: left; margin: 0px 15px 15px 0px;" src="images/map_image.jpg" width="100" />
+                  </div>
+                  <div class="footer-contact-info">
+                    <ul>
+                      <li><p>313-253-9468</p></li>
+                      <li><p>7304 Michigan Ave,<br>
+                        Detroit MI, 48210
+                        </p></li>
+                      <li><p>Monday-Saturday: 10AM-9PM<br>
+                        Sunday: 11AM-8PM
+                        </p></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="footer-menu">
+                        <ul>
+                          <li><a href="#">DAILY DEALS</a></li>
+                          <li><a href="#">MENU</a></li>
+                          <li><a href="#">NEWS</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">ABOUT US</a></li>
+                          <li><a href="#">CONTACT</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- <div class="col">
+                      <div class="footer-socail-icon">
+                        <ul>
+                          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                          <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                          <li><a href="#"><img src="images/wm.jpg" alt="wm" \></a></li>
+                        </ul>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+                
+              </div>
+              <div class="row pb-5">
+                <div class="col text-center">
+                  <img src="images/footer-logo.png" alt="logo">
+                  <p class="color-white pt-2">Copyright © 2021 Green Door
+                  </p>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- footer end -->
         <div class="container-fluid bg-danger" style="height: 700px;">
             <div class="row">
                 <div class="col-md-12" style="clear: both;">
                     <!-- offers start -->
                     <div class="current-offer">
                         <div class="offer">
-                            <h3>BUY 2 PLATINUM VAPES -- GET 2 FREE BUY 1 OZ. 20% OFF ANY GREEN LAB </h3>
+                            <!-- <h3>BUY 2 PLATINUM VAPES -- GET 2 FREE BUY 1 OZ. 20% OFF ANY GREEN LAB </h3> -->
                         </div>
                     </div>
                     <!-- offers end -->
@@ -184,7 +775,110 @@
       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <script src="https://use.fontawesome.com/83ac61cd0f.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+      <!-- <script src="https://use.fontawesome.com/83ac61cd0f.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
       <script src="js/custom.js"></script>
+      <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="lightslider/src/js/lightslider.js"></script>
+
+<script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+<script>
+$(document).ready(function () {
+  $('#theCarousel').on('slide.bs.carousel', function (e) {
+    let $e = $(e.relatedTarget),
+        itemsPerSlide = 3,
+        totalItems = $('.carousel-item', this).length,
+        $itemsContainer = $('.carousel-inner', this),
+        it = itemsPerSlide - (totalItems - $e.index());
+    if (it > 0) {
+      for (var i = 0; i < it; i++) {
+        $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
+          // append slides to the end/beginning
+          appendTo($itemsContainer);
+      }
+    }
+  });
+   /* 1 carousel */
+$('#theCarousel_two').carousel({
+      interval: 4000,
+      wrap: true,
+      keyboard: true
+ });
+  // $('#theCarousel_two, #theCarousel_three').carousel();
+});
+</script>
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper1 = new Swiper('.swiper1', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination1',
+        clickable: true,
+      },
+    });
+    var swiper2 = new Swiper('.swiper2', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination2',
+        clickable: true,
+      },
+    });
+    var swiper3 = new Swiper('.swiper3', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination3',
+        clickable: true,
+      },
+    });
+  </script>  
+   <script>
+    $(document).ready(function() {
+       $("#content-slider").lightSlider({
+           loop:true,
+           keyPress:true
+       });
+       $('#image-gallery').lightSlider({
+           gallery:true,
+           item:1,
+           thumbItem:9,
+           slideMargin: 0,
+           speed:500,
+           auto:true,
+           loop:true,
+           onSliderLoad: function() {
+               $('#image-gallery').removeClass('cS-hidden');
+           }  
+       });
+   });
+</script>  
+
    </body>
 </html>
