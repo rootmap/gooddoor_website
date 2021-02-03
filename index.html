@@ -1,678 +1,690 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link rel="stylesheet" href="css/custom.css">
-      <link rel="stylesheet" href="css/slider_video.css">
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-      <link rel="stylesheet" href="lightslider/src/css/lightslider.css"/>
-      <title>gooddoor</title>
-   </head>
-   <body class="bg-light">
-      <!--Navbar Start-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12" style="clear: both;">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/slider_video.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="lightslider/src/css/lightslider.css" />
+    <title>gooddoor</title>
+</head>
+
+<body class="bg-light">
+    <!--Navbar Start-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="clear: both;">
                 <div class="navbar navbar-expand-lg fixed-top navbar-light bg-white shadow" id="banner">
                     <div class="container">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <a class="navbar-brand" href="#">Menu </a> <span class="navbar-toggler-icon"></span>
                             <div class="navbar-nav my-2 my-lg-0 nav_cart_mobile">
-                            <i class="bi bi-cart3"></i>
+                                <i class="bi bi-cart3"></i>
                             </div>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav mr-auto">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">DAILY DEALS</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">MENU</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">NEWS</a>
-                              </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">DAILY DEALS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">MENU</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">NEWS</a>
+                                </li>
                             </ul>
                             <ul class="navbar-nav mr-auto">
-                              <li class="nav-item mt-0 pt-0 mb-0 pb-0">
-                                  <a class="nav-link mt-0 pt-0 mb-0 pb-0" href="#">
-                                      <div class="nav_logo">&nbsp;</div>
-                                  </a>
-                              </li>
+                                <li class="nav-item mt-0 pt-0 mb-0 pb-0">
+                                    <a class="nav-link mt-0 pt-0 mb-0 pb-0" href="#">
+                                        <div class="nav_logo">&nbsp;</div>
+                                    </a>
+                                </li>
                             </ul>
                             <ul class="navbar-nav pull-right" style="margin-right: 30px;">
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">FAQ</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">ABOUT US</a>
-                              </li>
-                              <li class="nav-item">
-                                  <a class="nav-link" href="#">CONTACT</a>
-                              </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT</a>
+                                </li>
                             </ul>
                             <div class="navbar-nav my-2 my-lg-0 nav_cart pull-right d-none d-lg-block rounded-pill">
-                            <i class="bi bi-cart3"></i> <span class="rounded-circle">12</span>
+                                <i class="bi bi-cart3"></i> <span class="rounded-circle">12</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
-                </div>
             </div>
-            <!--Navbar End-->
-            <div class="clearfix"></div>
-            <!--Slider Start-->
-            <div style="margin-top: 53px; background: url('./images/slider_shape.png') repeat-x top;" class="row bg-info">
-                <div id="videowrapper">
-                    <div id="fullScreenDiv">
-                        <video id="video" role="presentation" preload="auto" playsinline="" crossorigin="anonymous" loop="" muted="" autoplay="" class="blur">
-                            <source src="video/video.webm" type="video/webm">
-                            <source src="video/video.mp4" type="video/mp4">
-                        </video>
-                        <div id="videoMessage" class="styling">
-                            <img src="./images/slider_green_door.png" class="rounded mx-auto slider_logo" alt="...">
-                            <div class="row">
-                                <ul class="list-inline mr-auto">
+        </div>
+        <!--Navbar End-->
+        <div class="clearfix"></div>
+        <!--Slider Start-->
+        <div style="margin-top: 53px; background: url('./images/slider_shape.png') repeat-x top;" class="row bg-info">
+            <div id="videowrapper">
+                <div id="fullScreenDiv">
+                    <video id="video" role="presentation" preload="auto" playsinline="" crossorigin="anonymous" loop="" muted="" autoplay="" class="blur">
+                        <source src="video/video.webm" type="video/webm">
+                        <source src="video/video.mp4" type="video/mp4">
+                    </video>
+                    <div id="videoMessage" class="styling">
+                        <img src="./images/slider_green_door.png" class="rounded mx-auto slider_logo" alt="...">
+                        <div class="row">
+                            <ul class="list-inline mr-auto">
                                 <li class="list-inline-item"><a class="slider_menu zilaslab-bold" href="#">CURBSIDE</a></li>
                                 <li class="list-inline-item"><img src="./images/blue_dot.png" class="rounded mx-auto" alt="..."></li>
                                 <li class="list-inline-item"><a class="slider_menu zilaslab-bold" href="#">Pick up</a></li>
                                 <li class="list-inline-item"><img src="./images/red_dot.png" class="rounded mx-auto" alt="..."></li>
                                 <li class="list-inline-item"><a class="slider_menu zilaslab-bold" href="#">Delivery</a></li>
-                                </ul>
-                            </div>
-                            <div class="signup_slider d-flex justify-content-center shadow-sm rounded-pill" style="margin-bottom: 100px;">
-                                <div class="d-flex avenirregular align-items-center pl-3 pr-3" style="font-size: 18px !important;
+                            </ul>
+                        </div>
+                        <div class="signup_slider d-flex justify-content-center shadow-sm rounded-pill" style="margin-bottom: 100px;">
+                            <div class="d-flex avenirregular align-items-center pl-3 pr-3" style="font-size: 18px !important;
                                 font-family: 'Source Sans Pro', sans-serif;
                                 line-height: 20px;
                                 padding-top: 7px;
                                 padding-bottom: 7px;">
                                 Join the Green Door List to be the FIRST <br>
-                                to know about our offers, deals, & more! 
-                                </div>
-                                <div class="d-flex align-items-center pl-3 pr-3">
+                                to know about our offers, deals, & more!
+                            </div>
+                            <div class="d-flex align-items-center pl-3 pr-3">
                                 <a class="btn btn-info rounded-pill slider-signup text-white zilaslab-medium" style="font-size: 17px;">SIGN UP NOW</a>
-                                </div>
                             </div>
-                            <!--SLider Footer Start-->
-                            <div class="d-flex align-items-end mt-2 half-ellipse half-ellipse1" style="position: absolute; width:100%; height: 18vh;">
-                                <div class="flex-fill bd-highlight">
-                                    <div class="contact-info-left">
-                                        <ul class="contact-info">
-                                            <li><i class="slider_clock"></i> <span>HOURS OF <br>OPERATION</span></li>
-                                            <li><i class="slider_phone"></i> <span>PHONE # <br>  <a href="tel:313-254-9468">313-254-9468</a></span></li>
-                                            <li style="min-width: 170px;"><i class="slider_map"></i> <span>7304 MICHIGAN AVE. <br>DETROIT, MI 48210</span></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="flex-fill bd-highlight" style="text-align: center;">
-                                    <img src="./images/daily_deals.png" class="daily_deal_place" alt="...">
-                                </div>
-                                <div class="flex-fill bd-highlight">
-                                    <div class="float-right social" style="padding-right: 20px;">
-                                        <ul class="social-set pr-3">
-                                            <li>
-                                              <a class="sociali" href="#" target="_blank" aria-label="Instagram">
-                                                  <img src="./images/social/instagram_black.png" alt="Instagram" height="22">
-                                              </a>
-                                            </li>
-                                            <li>
-                                              <a class="sociali" href="#" target="_blank" aria-label="Facebook">
-                                                  <img src="./images/social/facebook_black.png" alt="Facebook" height="22">
-                                              </a>
-                                            </li>
-                                            <li>
-                                              <a class="sociali" href="#" target="_blank" aria-label="Twiiter">
-                                                  <img src="./images/social/twitter_black.png" alt="Twiiter" height="22">
-                                              </a>
-                                            </li>
-                                            <li>
-                                              <a class="sociali" href="#" target="_blank" aria-label="wb">
-                                                  <img src="./images/social/wb_black.png" alt="wb" height="22">
-                                              </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--SLider Footer End-->
                         </div>
+                        <!--SLider Footer Start-->
+                        <div class="d-flex align-items-end mt-2 half-ellipse half-ellipse1" style="position: absolute; width:100%; height: 18vh;">
+                            <div class="flex-fill bd-highlight">
+                                <div class="contact-info-left">
+                                    <ul class="contact-info">
+                                        <li><i class="slider_clock"></i> <span>HOURS OF <br>OPERATION</span></li>
+                                        <li><i class="slider_phone"></i> <span>PHONE # <br> <a href="tel:313-254-9468">313-254-9468</a></span></li>
+                                        <li style="min-width: 170px;"><i class="slider_map"></i> <span>7304 MICHIGAN AVE. <br>DETROIT, MI 48210</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex-fill bd-highlight" style="text-align: center;">
+                                <img src="./images/daily_deals.png" class="daily_deal_place" alt="...">
+                            </div>
+                            <div class="flex-fill bd-highlight">
+                                <div class="float-right social" style="padding-right: 20px;">
+                                    <ul class="social-set pr-3">
+                                        <li>
+                                            <a class="sociali" href="#" target="_blank" aria-label="Instagram">
+                                                <img src="./images/social/instagram_black.png" alt="Instagram" height="22">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sociali" href="#" target="_blank" aria-label="Facebook">
+                                                <img src="./images/social/facebook_black.png" alt="Facebook" height="22">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sociali" href="#" target="_blank" aria-label="Twiiter">
+                                                <img src="./images/social/twitter_black.png" alt="Twiiter" height="22">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="sociali" href="#" target="_blank" aria-label="wb">
+                                                <img src="./images/social/wb_black.png" alt="wb" height="22">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--SLider Footer End-->
                     </div>
                 </div>
             </div>
-            <!--Slider end-->
-            <div class="clearfix"></div>
         </div>
+        <!--Slider end-->
+        <div class="clearfix"></div>
+    </div>
 
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid theme-bg-black zilaslab-medium font-24">
-            <div class="row pt1510">
-                    <div class="col-md-8 daily_deals_tricker_1 text-center">
-                        <a href="#" class="daily_deals_tricker_1"><marquee scrollamount="5" width="40">&lt;&lt;&lt;</marquee>BUY 2 PLATINUM VAPES -- GET 2 FREE   BUY 1 OZ.<marquee scrollamount="5" direction="right" width="40">&gt;&gt;&gt;</marquee></a>
-                    </div>
-                    <div class="col-md-4 daily_deals_tricker_2 text-center">
-                        <a href="#" class="daily_deals_tricker_2"><marquee scrollamount="5" width="40">&lt;&lt;&lt;</marquee>20% OFF ANY GREEN LAB<marquee scrollamount="5" direction="right" width="40">&gt;&gt;&gt;</marquee></a>
-                    </div>
-                
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid theme-bg-black zilaslab-medium font-24">
+        <div class="row pt1510">
+            <div class="col-md-8 daily_deals_tricker_1 text-center">
+                <a href="#" class="daily_deals_tricker_1">
+                    <marquee scrollamount="5" width="40">&lt;&lt;&lt;</marquee>BUY 2 PLATINUM VAPES -- GET 2 FREE BUY 1 OZ.<marquee scrollamount="5" direction="right" width="40">&gt;&gt;&gt;</marquee>
+                </a>
+            </div>
+            <div class="col-md-4 daily_deals_tricker_2 text-center">
+                <a href="#" class="daily_deals_tricker_2">
+                    <marquee scrollamount="5" width="40">&lt;&lt;&lt;</marquee>20% OFF ANY GREEN LAB<marquee scrollamount="5" direction="right" width="40">&gt;&gt;&gt;</marquee>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!--Daily Deals Tricker Ended-->
+
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/slider_shape.png') repeat-x top; height: auto;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia rounded-pill">SEE ALL DEALS</a>
+            </div>
+
+        </div>
+        <div class="row pt-5">
+            <div class="col text-center">
+                <p class="h2 zilaslab-medium">WEEKLY STAFF PICKS</p>
             </div>
         </div>
-        <!--Daily Deals Tricker Ended-->
-
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/slider_shape.png') repeat-x top; height: auto;">
+        <div class="container">
             <div class="row pt-5">
-                <div class="col text-center">
-                    <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia rounded-pill">SEE ALL DEALS</a>
-                </div>
-                
-            </div>
-            <div class="row pt-5">
-                <div class="col text-center">
-                    <p class="h2 zilaslab-medium">WEEKLY STAFF PICKS</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row pt-5">
-                    <div class="container">
-                        <div class="carousel slide multi-item-carousel" id="theCarousel">
-                          <div class="carousel-inner row w-100 mx-auto">
+                <div class="container">
+                    <div class="carousel slide multi-item-carousel" id="theCarousel">
+                        <div class="carousel-inner row w-100 mx-auto">
                             <div class="carousel-item active col-md-4">
-                              <img src="images/offer/1.png" class="img-fluid mx-auto d-block">
-                              <div class="img-caption pt-2">
-                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Jess OG</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                              </div>
+                                <img src="images/offer/1.png" class="img-fluid mx-auto d-block">
+                                <div class="img-caption pt-2">
+                                    <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Jess OG</a>
+                                    <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                                </div>
                             </div>
                             <div class="carousel-item col-md-4">
-                              <img src="images/offer/2.png" class="img-fluid mx-auto d-block">
-                              <div class="img-caption pt-2">
-                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Green Door Kush</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                              </div>
+                                <img src="images/offer/2.png" class="img-fluid mx-auto d-block">
+                                <div class="img-caption pt-2">
+                                    <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Green Door Kush</a>
+                                    <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                                </div>
                             </div>
                             <div class="carousel-item col-md-4">
-                              <img src="images/offer/3.png" class="img-fluid mx-auto d-block">
-                              <div class="img-caption pt-2">
-                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Fiona Cookies</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                              </div>
+                                <img src="images/offer/3.png" class="img-fluid mx-auto d-block">
+                                <div class="img-caption pt-2">
+                                    <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Fiona Cookies</a>
+                                    <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                                </div>
                             </div>
-                            
-                          </div>
-                          <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+
+                        </div>
+                        <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
-                          </a>
-                          <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        </a>
+                        <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
-                          </a>
-                        </div>
-                      </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            
-            
-        </div>
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
-
-        
-        <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
-            <div class="row pt-5">
-                <div class="col text-center">
-                    <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">Check out all staff picks.</div>
-                    <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">Go Now</a>
-                </div>
-            </div>
-            
-
-            <div class="row" style="padding-top:36px;">
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="First slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Jess OG</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </a>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Second slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Green Door Kush</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Third slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Fiona Cookies</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
-                    </div>
-                  </div>
                 </div>
-                
-              </div>
-            </div>
-
-        </div>
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24  bg-white" style=" height: auto;">
-            <div class="row pt-5">
-                <div class="col text-center">
-                    <div class="feature_bundle">FEATURED BUNDLES OF THE MONTH.</div>
-                </div>
-            </div>
-            <div class="row pt-5">
-                <div class="container">
-                    <div class="carousel slide multi-item-carousel" id="theCarousel_two">
-                      <div class="carousel-inner row w-100 mx-auto carousel-image-border">
-                        <div class="carousel-item active col-md-4">
-                          <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 1</a>
-                            <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                          <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 2</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                          <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 3</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        
-                        
-                      </div>
-                      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                  </div>
             </div>
             <div class="clearfix"></div>
         </div>
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24  bg-white" style=" height: auto; padding-bottom: 15px;">
-            <div class="col pt-5 text-center">
-                <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">Check out our bundles for details.</div>
-                <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">SEE ALL BUNDLES</a>
+
+
+    </div>
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+
+
+    <div class="container-fluid zilaslab-medium font-24" style=" height: auto;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">Check out all staff picks.</div>
+                <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">Go Now</a>
             </div>
         </div>
-        <!-- <hr class="hr"> -->
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
 
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24 bg-white" style=" height: auto;">
-                <div class="row pt-1">
-                <!-- Swiper -->
-                    <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"></li>
-                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"></li>
-                        <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"></li>
-                      </ol>
-                      <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <div class="row pb-36">
-                                <div class="col-md-3 offset-md-1">
-                                    <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
-                                    <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">MKX Carts</h2>
-                                    <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                                      <a href="#" class="btn btn-small btn-danger theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px; background-color: #EF3923;">Go Now</a>
-                                </div>
-                                <div class="col-md-6 align-middle" style="text-align: right;">
-                                  <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
-                                </div>
-                              </div>
-                              
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row pb-36">
-                              <div class="col-md-3 offset-md-1">
-                                  <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
-                                  <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">Jess OG</h2>
-                                  <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                                    <a href="#" class="btn btn-small btn-danger theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px;background-color: #EF3923;">Go Now</a>
-                              </div>
-                              <div class="col-md-6 align-middle" style="text-align: right;">
-                                <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row pb-36">
-                              <div class="col-md-3 offset-md-1">
-                                  <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
-                                  <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">MKX Carts 2</h2>
-                                  <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                                    <a href="#" class="btn btn-small btn-danger  theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px; background-color: #EF3923;">Go Now</a>
-                              </div>
-                              <div class="col-md-6 align-middle" style="text-align: right;">
-                                <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      
-                    </div>
-              
-                </div>  
 
-                <div class="row">
-              <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+        <div class="row" style="padding-top:36px;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="First slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Jess OG</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="First slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Jess OG</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Second slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Green Door Kush</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Second slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Green Door Kush</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Third slide">
-                    <div class="swiper-slide col-md-4">
-                      <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
-                      <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Fiona Cookies</h2>
-                      <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
-                        <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Third slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Fiona Cookies</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                
-              </div>
-            </div>  
-                            
-            </div>
 
-            
-            
-        </div>
-        <!--Daily Deals Tricker Ended-->
-        <!--Daily Deals Tricker Started-->
-        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff;">
-            <div class="row pt-5">
-                <div class="col text-center">
-                    <div class="feature_bundle">ACCESSORIES.</div>
-                </div>
-            </div>
-            <div class="row" style="padding-top: 36px;">
-                <div class="container">
-                    <div class="carousel slide multi-item-carousel" id="theCarousel_three">
-                      <div class="carousel-inner row w-100 mx-auto carousel-image-border">
-                        <div class="carousel-item active col-md-4">
-                          <img src="images/pax.jpg" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Pax ERA</a>
-                            <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                          <img src="images/str8.jpg" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">STR8 Case</a>
-                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        <div class="carousel-item col-md-4">
-                          <img src="images/puff.jpg" class="img-fluid mx-auto d-block">
-                          <div class="img-caption pt-2">
-                            <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Puff Co Peak</a>
-                            <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
-                          </div>
-                        </div>
-                        
-                      </div>
-                      <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col pt-5 text-center pb-5">
-                <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">We have all you need.</div>
-                <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">SEE MORE ACCESSORIES</a>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <!--Daily Deals Tricker Ended-->
-        <div class="container-fluid zilaslab-medium font-24" style="background-color: #276DAE;">
-            <div class="text-center pt-36">
-                <img src="images/offer/rating.png" alt="ratting image" \>
-                <div class="color-white zilaslab-medium pt-36" style="font-size: 20px;">Leave us a review and tell us how we did!</div>
-                
-            </div>
-            <div class="container pt-36 pb-36">
-                <div class="row text-center">
-                    <div class="col"><a href="#"><img src="images/weedmaps.png" alt="map" \></a></div>
-                    <div class="col"><a href="#"><img src="images/google_maps.png" alt="map" \></a></div>
-                    <div class="col"><a href="#"><img src="images/leafly.png" alt="map" \></a></div>
-                </div>
             </div>
         </div>
-        <!-- follow now start -->
-        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; padding-bottom: 15px; background-color: #fff;">
+
+    </div>
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid zilaslab-medium font-24  bg-white" style=" height: auto;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <div class="feature_bundle">FEATURED BUNDLES OF THE MONTH.</div>
+            </div>
+        </div>
+        <div class="row pt-5">
             <div class="container">
-                <div class="row text-center pt-0 pb-0">
-                    <div class="col">
-                        <div class="row pt-36">
-                            <div class="col pl-0">
-                                <div class="zilaslab-medium" style="margin-left: -15px;">STAY UPDATED WITH GREEN DOOR ON <img src="images/instagram.png"></div>
-                            </div>
-                            <div class="col">
-                                <a href="#" class="btn btn-small zilaslab-medium theme-button-sp lt-3 theme-bg-black rounded float-right" style="padding:2px 46px !important;">FOLLOW NOW</a>
+                <div class="carousel slide multi-item-carousel" id="theCarousel_two">
+                    <div class="carousel-inner row w-100 mx-auto carousel-image-border">
+                        <div class="carousel-item active col-md-4">
+                            <img src="images/offer/Bundle_1.png" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 1</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
                             </div>
                         </div>
-                        <div class="item pt-36">
-                            <ul id="content-slider" class="content-slider">
+                        <div class="carousel-item col-md-4">
+                            <img src="images/offer/Bundle_2.png" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 2</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                            <img src="images/offer/Bundle_3.png" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Bundle 3</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid zilaslab-medium font-24  bg-white" style=" height: auto; padding-bottom: 15px;">
+        <div class="col pt-5 text-center">
+            <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">Check out our bundles for details.</div>
+            <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">SEE ALL BUNDLES</a>
+        </div>
+    </div>
+    <!-- <hr class="hr"> -->
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid zilaslab-medium font-24 bg-white" style=" height: auto;">
+        <div class="row pt-1">
+            <!-- Swiper -->
+            <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row pb-36">
+                            <div class="col-md-3 offset-md-1">
+                                <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
+                                <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">MKX Carts</h2>
+                                <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                                <a href="#" class="btn btn-small btn-danger theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px; background-color: #EF3923;">Go Now</a>
+                            </div>
+                            <div class="col-md-6 align-middle" style="text-align: right;">
+                                <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pb-36">
+                            <div class="col-md-3 offset-md-1">
+                                <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
+                                <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">Jess OG</h2>
+                                <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                                <a href="#" class="btn btn-small btn-danger theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px;background-color: #EF3923;">Go Now</a>
+                            </div>
+                            <div class="col-md-6 align-middle" style="text-align: right;">
+                                <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row pb-36">
+                            <div class="col-md-3 offset-md-1">
+                                <img src="./images/concentrates_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
+                                <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 50px;">MKX Carts 2</h2>
+                                <p class="avenirregular text-left pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                                <a href="#" class="btn btn-small btn-danger  theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-left mt-2" style="border-radius: 11px !important; font-size: 15px; background-color: #EF3923;">Go Now</a>
+                            </div>
+                            <div class="col-md-6 align-middle" style="text-align: right;">
+                                <img class="text-right w-100 mt-5 pl-5" style="margin:0 auto;" src="./images/mkx.png" alt="Second slide">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="First slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded  pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Jess OG</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Second slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Green Door Kush</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/snd_slider.jpg" alt="Third slide">
+                        <div class="swiper-slide col-md-4">
+                            <img src="./images/flower_of_the_week.png" class="rounded pt-5" height="151px" alt="...">
+                            <h2 class="pt-36 avenirregular" style="font-weight: 700; margin-top: 100px;">Fiona Cookies</h2>
+                            <p class="avenirregular text-right pt-1" style="font-weight: normal; line-height: 20px; font-size: 14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet</p>
+                            <a href="#" class="btn btn-small btn-info theme-btnsm-sp lt-3 rounded-pill zilaslab-medium float-right mt-2" style="border-radius: 11px !important; font-size: 15px;">Go Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <!--Daily Deals Tricker Ended-->
+    <!--Daily Deals Tricker Started-->
+    <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff;">
+        <div class="row pt-5">
+            <div class="col text-center">
+                <div class="feature_bundle">ACCESSORIES.</div>
+            </div>
+        </div>
+        <div class="row" style="padding-top: 36px;">
+            <div class="container">
+                <div class="carousel slide multi-item-carousel" id="theCarousel_three">
+                    <div class="carousel-inner row w-100 mx-auto carousel-image-border">
+                        <div class="carousel-item active col-md-4">
+                            <img src="images/pax.jpg" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Pax ERA</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                            <img src="images/str8.jpg" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">STR8 Case</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item col-md-4">
+                            <img src="images/puff.jpg" class="img-fluid mx-auto d-block">
+                            <div class="img-caption pt-2">
+                                <a href="#" class="btn btn-small btn-default theme-btnsmb-sp rounded-pill zilaslab-medium float-left">Puff Co Peak</a>
+                                <a href="#" class="btn btn-small theme-btnsm-sp lt-2 theme-tia rounded-pill zilaslab-medium float-right mr-19">Go Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col pt-5 text-center pb-5">
+            <div class="zilaslab-medium theme-heading-sp pb-3" style="font-weight: 500;">We have all you need.</div>
+            <a href="#" class="btn btn-large theme-button-sp lt-2 theme-tia zilaslab-medium rounded-pill mt-3">SEE MORE ACCESSORIES</a>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!--Daily Deals Tricker Ended-->
+    <div class="container-fluid zilaslab-medium font-24" style="background-color: #276DAE;">
+        <div class="text-center pt-36">
+            <img src="images/offer/rating.png" alt="ratting image" \>
+            <div class="color-white zilaslab-medium pt-36" style="font-size: 20px;">Leave us a review and tell us how we did!</div>
+
+        </div>
+        <div class="container pt-36 pb-36">
+            <div class="row text-center">
+                <div class="col"><a href="#"><img src="images/weedmaps.png" alt="map" \></a></div>
+                <div class="col"><a href="#"><img src="images/google_maps.png" alt="map" \></a></div>
+                <div class="col"><a href="#"><img src="images/leafly.png" alt="map" \></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- follow now start -->
+    <div class="container-fluid zilaslab-medium font-24" style=" height: auto; padding-bottom: 15px; background-color: #fff;">
+        <div class="container">
+            <div class="row text-center pt-0 pb-0">
+                <div class="col">
+                    <div class="row pt-36">
+                        <div class="col pl-0">
+                            <div class="zilaslab-medium" style="margin-left: -15px;">STAY UPDATED WITH GREEN DOOR ON <img src="images/instagram.png"></div>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="btn btn-small zilaslab-medium theme-button-sp lt-3 theme-bg-black rounded float-right" style="padding:2px 46px !important;">FOLLOW NOW</a>
+                        </div>
+                    </div>
+                    <div class="item pt-36">
+                        <ul id="content-slider" class="content-slider">
+                            <li>
+                                <img src="images/small_slider/1.png" alt="slider" \>
+                            </li>
+                            <li>
+                                <img src="images/small_slider/2.png" alt="slider" \>
+                            </li>
+                            <li>
+                                <img src="images/small_slider/3.png" alt="slider" \>
+                            </li>
+                            <li>
+                                <img src="images/small_slider/4.png" alt="slider" \>
+                            </li>
+                            <li>
+                                <img src="images/small_slider/5.png" alt="slider" \>
+                            </li>
+                            <li>
+                                <img src="images/small_slider/6.png" alt="slider" \>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- follow now end -->
+    <!-- follow now start -->
+    <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff; padding-bottom: 15px;">
+        <div class="container">
+            <div class="row pt-36 align-middle">
+                <div class="col zilaslab-medium align-middle" style="line-height: 2.3rem;">
+                    GREEN DOOR NEWS
+                </div>
+                <div class="col">
+                    <a href="#" class="btn btn-small zilaslab-medium theme-button-sp lt-3 theme-bg-black rounded float-right" style="padding:2px 46px !important;">SEE ALL</a>
+                </div>
+
+            </div>
+            <div class="row text-center pt-36">
+                <div class="col">
+                    <div class="item-card">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="images/blog/1.jpg" alt="Card image cap">
+                            <div class="card-body pl-0 pr-0">
+                                <p class="zilaslab-medium" style="text-align: left !important;  min-height: 40px;  font-size: 18px; font-weight: 500; line-height: 20px; text-shadow: 0 0 black; text-transform: uppercase; color: #000;">TRUST ME, THIS IS ONE GREEN DOOR</p>
+                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                </p>
+                                <a href="#" class="btn btn-small btn-danger theme-button-sp pull-left lt-3 rounded-pill" style="float: left;">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item-card">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="images/blog/2.jpg" alt="Card image cap">
+                            <div class="card-body pl-0 pr-0">
+                                <p class="zilaslab-medium" style="text-align: left !important; min-height: 40px; font-size: 18px; font-weight: 500; text-transform: uppercase; text-shadow: 0 0 black; line-height: 20px;  color: #000;">We love to give back national epilepsy
+                                    month</p>
+                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                </p>
+                                <a href="#" class="btn btn-small theme-tia theme-button-sp lt-3 pull-left rounded-pill" style="float: left;">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item-card">
+                        <div class="card border-0">
+                            <img class="card-img-top" src="images/blog/3.jpg" alt="Card image cap">
+                            <div class="card-body pl-0 pr-0">
+                                <p class="zilaslab-medium" style="text-align: left !important; min-height: 40px; font-size: 18px; line-height: 20px; font-weight: 500; text-shadow: 0 0 black; text-transform: uppercase;  color: #000;">This just in, Aaron and ron are in this picture</p>
+                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+                                </p>
+                                <a href="#" class="btn btn-small btn-info theme-button-sp lt-3 rounded-pill" style="float: left;">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- follow now end -->
+
+    <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/background_image.jpg') repeat-x top;  height: auto;">
+        <div class="row pt-lg-5 pb-lg-5" style="background-color: rgb(0,0,0,0.5);">
+            <div class="col text-center">
+                <div class="color-white avenirregular lt-3" style="line-height: 40px; font-weight: 600;">JOIN THE GREEN DOOR LIST TO BE THE FIRST <br>
+                    TO KNOW ABOUT OUR OFFERS, DEALS, AND MORE</div>
+                <div class="clearfix"></div>
+                <a href="#" class="btn btn-small theme-button-sp theme-tia rounded-pill" style="margin-top: 22px !important; letter-spacing: 3px !important;">SIGN UP NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer start -->
+    <footer>
+        <div class="container-fluid zilaslab-medium font-24 theme-bg-black">
+            <div class="container">
+                <div class="row pt-5 pb-2 color-white">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <div>
+                            <img style="float: left; margin: 0px 15px 15px 0px;" src="images/map_image.jpg" width="100" />
+                        </div>
+                        <div class="footer-contact-info">
+                            <ul>
                                 <li>
-                                    <img src="images/small_slider/1.png" alt="slider" \>
+                                    <p>313-253-9468</p>
                                 </li>
                                 <li>
-                                    <img src="images/small_slider/2.png" alt="slider" \>
+                                    <p>7304 Michigan Ave,<br>
+                                        Detroit MI, 48210
+                                    </p>
                                 </li>
                                 <li>
-                                    <img src="images/small_slider/3.png" alt="slider" \>
+                                    <p>Monday-Saturday: 10AM-9PM<br>
+                                        Sunday: 11AM-8PM
+                                    </p>
                                 </li>
-                                <li>
-                                    <img src="images/small_slider/4.png" alt="slider" \>
-                                </li>
-                                <li>
-                                    <img src="images/small_slider/5.png" alt="slider" \>
-                                </li>
-                                <li>
-                                    <img src="images/small_slider/6.png" alt="slider" \>
-                                </li>
-                                
                             </ul>
                         </div>
                     </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- follow now end -->
-        <!-- follow now start -->
-        <div class="container-fluid zilaslab-medium font-24" style=" height: auto; background-color: #fff; padding-bottom: 15px;">
-            <div class="container">
-                <div class="row pt-36 align-middle">
-                            <div class="col zilaslab-medium align-middle" style="line-height: 2.3rem;">
-                                GREEN DOOR NEWS
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">DAILY DEALS</a></li>
+                                        <li><a href="#">MENU</a></li>
+                                        <li><a href="#">NEWS</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">ABOUT US</a></li>
+                                        <li><a href="#">CONTACT</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col">
-                                <a href="#" class="btn btn-small zilaslab-medium theme-button-sp lt-3 theme-bg-black rounded float-right" style="padding:2px 46px !important;">SEE ALL</a>
+                            <div class="col-4">
+                                <div class="footer-menu">
+                                    <ul class="pl-0">
+                                        <li class="pb-1"><a href="#"><img src="images/social/instagram.png" alt="Instagram" height="24px"></a></li>
+                                        <li class="pb-1"><a href="#"><img src="images/social/twitter.png" alt="twitter" height="24px"></a></li>
+                                        <li class="pb-1"><a href="#"><img src="images/social/facebook.png" alt="facebook" height="24px"></a></li>
+                                        <li class="pb-1"><a href="#"><img src="images/social/wb.png" alt="wb" height="24px"></a></li>
+                                    </ul>
+                                </div>
                             </div>
-
-                </div>
-                <div class="row text-center pt-36">
-                  <div class="col">
-                      <div class="item-card">
-                          <div class="card border-0">
-                              <img class="card-img-top" src="images/blog/1.jpg" alt="Card image cap">
-                              <div class="card-body pl-0 pr-0">
-                                <p class="zilaslab-medium" style="text-align: left !important;  min-height: 40px;  font-size: 18px; font-weight: 500; line-height: 20px; text-shadow: 0 0 black; text-transform: uppercase; color: #000;">TRUST ME, THIS IS ONE GREEN DOOR</p>
-                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                                  laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
-                                  suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse 
-                                </p>
-                                <a href="#" class="btn btn-small btn-danger theme-button-sp pull-left lt-3 rounded-pill" style="float: left;">READ MORE</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="item-card">
-                          <div class="card border-0">
-                              <img class="card-img-top" src="images/blog/2.jpg" alt="Card image cap">
-                              <div class="card-body pl-0 pr-0">
-                                <p class="zilaslab-medium" style="text-align: left !important; min-height: 40px; font-size: 18px; font-weight: 500; text-transform: uppercase; text-shadow: 0 0 black; line-height: 20px;  color: #000;">We love to give back national epilepsy
-                                  month</p>
-                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                                  laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
-                                  suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse 
-                                </p>
-                                <a href="#" class="btn btn-small theme-tia theme-button-sp lt-3 pull-left rounded-pill" style="float: left;">READ MORE</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                      <div class="item-card">
-                          <div class="card border-0">
-                              <img class="card-img-top" src="images/blog/3.jpg" alt="Card image cap">
-                              <div class="card-body pl-0 pr-0">
-                                <p class="zilaslab-medium" style="text-align: left !important; min-height: 40px; font-size: 18px; line-height: 20px; font-weight: 500; text-shadow: 0 0 black; text-transform: uppercase;  color: #000;">This just in, Aaron and ron are in this picture</p>
-                                <p class="card-text avenirregular text-left" style="line-height: 22px;">
-                                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
-                                  laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
-                                  suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse 
-                                </p>
-                                <a href="#" class="btn btn-small btn-info theme-button-sp lt-3 rounded-pill" style="float: left;">READ MORE</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- follow now end -->
-
-        <div class="container-fluid zilaslab-medium font-24" style="background: url('./images/background_image.jpg') repeat-x top;  height: auto;">
-          <div class="row pt-lg-5 pb-lg-5" style="background-color: rgb(0,0,0,0.5);">
-              <div class="col text-center">
-                <div class="color-white avenirregular lt-3" style="line-height: 40px; font-weight: 600;">JOIN THE GREEN DOOR LIST TO BE THE FIRST <br>
-                  TO KNOW ABOUT OUR OFFERS, DEALS, AND MORE</div>
-                  <div class="clearfix"></div>
-                  <a href="#" class="btn btn-small theme-button-sp theme-tia rounded-pill" style="margin-top: 22px !important; letter-spacing: 3px !important;">SIGN UP NOW</a>
-              </div>
-            </div>
-        </div>
-        <!-- footer start -->
-        <footer>
-          <div class="container-fluid zilaslab-medium font-24 theme-bg-black">
-            <div class="container">
-              <div class="row pt-5 pb-2 color-white">
-                <div class="col-md-3"></div>
-                <div class="col-md-3">
-                  <div>
-                    <img style="float: left; margin: 0px 15px 15px 0px;" src="images/map_image.jpg" width="100" />
-                  </div>
-                  <div class="footer-contact-info">
-                    <ul>
-                      <li><p>313-253-9468</p></li>
-                      <li><p>7304 Michigan Ave,<br>
-                        Detroit MI, 48210
-                        </p></li>
-                      <li><p>Monday-Saturday: 10AM-9PM<br>
-                        Sunday: 11AM-8PM
-                        </p></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-4">
-                      <div class="footer-menu">
-                        <ul>
-                          <li><a href="#">DAILY DEALS</a></li>
-                          <li><a href="#">MENU</a></li>
-                          <li><a href="#">NEWS</a></li>
-                          <li><a href="#">FAQ</a></li>
-                          <li><a href="#">ABOUT US</a></li>
-                          <li><a href="#">CONTACT</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="footer-menu">
-                        <ul class="pl-0">
-                          <li class="pb-1"><a href="#"><img src="images/social/instagram.png" alt="Instagram" height="24px"></a></li>
-                          <li class="pb-1"><a href="#"><img src="images/social/twitter.png" alt="twitter" height="24px"></a></li>
-                          <li class="pb-1"><a href="#"><img src="images/social/facebook.png" alt="facebook" height="24px"></a></li>
-                          <li class="pb-1"><a href="#"><img src="images/social/wb.png" alt="wb" height="24px"></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- <div class="col">
+                            <!-- <div class="col">
                       <div class="footer-socail-icon">
                         <ul>
                           <li><a href="#"><i class="bi bi-instagram"></i></a></li>
@@ -682,133 +694,134 @@
                         </ul>
                       </div>
                     </div> -->
-                  </div>
+                        </div>
+                    </div>
+
                 </div>
-                
-              </div>
-              <div class="row">
-                <div class="col text-center" style=" padding-top: 10px;">
-                  <img src="images/footer-logo.png" class="" alt="logo" width="132">
-                  <p class="color-white pt-12 pb-12" style="font-size: 12px; padding-top: 24px;">Copyright © 2021 Green Door
-                  </p>
-                   
+                <div class="row">
+                    <div class="col text-center" style=" padding-top: 10px;">
+                        <img src="images/footer-logo.png" class="" alt="logo" width="132">
+                        <p class="color-white pt-12 pb-12" style="font-size: 12px; padding-top: 24px;">Copyright © 2021 Green Door
+                        </p>
+
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </footer>
-        <!-- footer end -->
-        
+        </div>
+    </footer>
+    <!-- footer end -->
 
-      <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-      <!-- <script src="https://use.fontawesome.com/83ac61cd0f.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-      <script src="js/custom.js"></script>
-      <!-- Swiper JS -->
-      <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      <script src="lightslider/src/js/lightslider.js"></script>
 
-      <script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- <script src="https://use.fontawesome.com/83ac61cd0f.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="js/custom.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="lightslider/src/js/lightslider.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      speed: 600,
-      parallax: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+    <script type="text/javascript" src="js/responsiveCarousel.min.js"></script>
 
-<script>
-$(document).ready(function () {
-  $('#theCarousel').on('slide.bs.carousel', function (e) {
-    let $e = $(e.relatedTarget),
-        itemsPerSlide = 3,
-        totalItems = $('.carousel-item', this).length,
-        $itemsContainer = $('.carousel-inner', this),
-        it = itemsPerSlide - (totalItems - $e.index());
-    if (it > 0) {
-      for (var i = 0; i < it; i++) {
-        $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
-          // append slides to the end/beginning
-          appendTo($itemsContainer);
-      }
-    }
-  });
-   /* 1 carousel */
-$('#theCarousel_two').carousel({
-      interval: 4000,
-      wrap: true,
-      keyboard: true
- });
-  // $('#theCarousel_two, #theCarousel_three').carousel();
-});
-</script>
- <!-- Initialize Swiper -->
- <script>
-    var swiper1 = new Swiper('.swiper1', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination1',
-        clickable: true,
-      },
-    });
-    var swiper2 = new Swiper('.swiper2', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination2',
-        clickable: true,
-      },
-    });
-    var swiper3 = new Swiper('.swiper3', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination3',
-        clickable: true,
-      },
-    });
-  </script>  
-   <script>
-    $(document).ready(function() {
-       $("#content-slider").lightSlider({
-           loop:true,
-           keyPress:true
-       });
-       $('#image-gallery').lightSlider({
-           gallery:true,
-           item:1,
-           thumbItem:9,
-           slideMargin: 0,
-           speed:500,
-           auto:true,
-           loop:true,
-           onSliderLoad: function() {
-               $('#image-gallery').removeClass('cS-hidden');
-           }  
-       });
-   });
-</script>  
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 
-   </body>
+    <script>
+        $(document).ready(function() {
+            $('#theCarousel').on('slide.bs.carousel', function(e) {
+                let $e = $(e.relatedTarget),
+                    itemsPerSlide = 3,
+                    totalItems = $('.carousel-item', this).length,
+                    $itemsContainer = $('.carousel-inner', this),
+                    it = itemsPerSlide - (totalItems - $e.index());
+                if (it > 0) {
+                    for (var i = 0; i < it; i++) {
+                        $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
+                        // append slides to the end/beginning
+                        appendTo($itemsContainer);
+                    }
+                }
+            });
+            /* 1 carousel */
+            $('#theCarousel_two').carousel({
+                interval: 4000,
+                wrap: true,
+                keyboard: true
+            });
+            // $('#theCarousel_two, #theCarousel_three').carousel();
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper1 = new Swiper('.swiper1', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination1',
+                clickable: true,
+            },
+        });
+        var swiper2 = new Swiper('.swiper2', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination2',
+                clickable: true,
+            },
+        });
+        var swiper3 = new Swiper('.swiper3', {
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination3',
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#content-slider").lightSlider({
+                loop: true,
+                keyPress: true
+            });
+            $('#image-gallery').lightSlider({
+                gallery: true,
+                item: 1,
+                thumbItem: 9,
+                slideMargin: 0,
+                speed: 500,
+                auto: true,
+                loop: true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+
+</body>
+
 </html>
