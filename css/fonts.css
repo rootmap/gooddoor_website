@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'zilla_slabmedium';
+    src: url('./fonts/zillaslab/medium/zillaslab-medium-webfont.woff2') format('woff2'),
+         url('./fonts/zillaslab/medium/zillaslab-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'zilla_slab_boldbold';
+    src: url('./fonts/zillaslab/bold/zillaslab-bold.woff2') format('woff2'),
+         url('./fonts/zillaslab/bold/zillaslab-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'avenirregular';
+    src: url('./fonts/avenir_55_roman/avenir_55_roman.woff2') format('woff2'),
+         url('./fonts/avenir_55_roman/avenir_55_roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
