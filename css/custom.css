@@ -77,7 +77,9 @@
 .theme-bg{ background-color: #2D3C49; }
 .theme-bg-black{ background-color: #000; }
 .theme-tia{ background-color: #AFCB37; }
+.lt-1{ letter-spacing: 1px; }
 .lt-3{ letter-spacing: 3px; }
+.lt-6{ letter-spacing: 6px; }
 .lt-2{ letter-spacing: 2px; }
 .theme-button-sp{ padding:4px 31px !important; font-size:18px; color: #fff; text-transform: uppercase; border-radius: 11px !important; }
 .theme-btnsmb-sp{ padding:4px 31px 4px 15px !important;  font-size:15px; text-decoration: none;     font-family: 'avenirregular';

@@ -1,12 +1,90 @@
 #contact_full_screen_div {
     min-height: 100%;
-    height: 450px;
+    height: 279px;
     width: 100vw;
     padding: 0;
     margin: 0;
     position: relative;
-    background-color: gray;
+    background: url('../images/background_image.jpg');
 }
+
+
+.overlay-contact{
+    position: absolute;
+    background: rgb(0,0,0,0.5);
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    
+    .page-blue-border
+    {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .mobile_view_map{  }
+
+    .page-blue-border:before
+    {
+        background: url(../images/page_border_green.png) no-repeat center;
+        /* margin-top: 44px; */
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        /* margin: 0 auto; */
+        position: absolute;
+        padding-top: 82px;
+        margin-left: -31px;
+    }
+}
+
+
+@media (max-aspect-ratio: 16/9) {
+    
+    .page-blue-border
+    {
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+    }
+
+    .mobile_view_map{ width: 100%; display: block; clear: both; }
+
+    .page-blue-border:before
+    {
+        background: url(../images/page_border_green.png) no-repeat center;
+        /* margin-top: 44px; */
+        content: "";
+        display: block;
+        width: 100%;
+        height: 8px;
+        /* margin: 0 auto; */
+        position: absolute;
+        padding-top: 142px;
+        margin-left: -31px;
+    }
+}
+
+
+.border-greendoor-b{}
+.border-greendoor-b:before
+{
+    background: url(../images/page_border_green.png) no-repeat center;
+    /* margin-top: 44px; */
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    /* margin: 0 auto; */
+    position: absolute;
+    padding-top: 97px;
+    margin-left: -15px;
+}
+
 
 #banner {
     width: 100vw;
@@ -14,12 +92,17 @@
     margin: auto;
     display: block;
 }
+
+.contact_email{ text-decoration: none; color: #000; }
+.contact_email:hover{ text-decoration: none; color: #000;  }
+
 #contact_full_screen_div .daily_deal_place{
     position: absolute;
     vertical-align: top;
-    top: -190px;
+    top: -115px;
     text-align: center;
-    margin-left: -165px;
+    margin-left: -127px !important;
+    height: 224px;
 }
 .get_in_touch img, .social_info img {
   display: block;
@@ -55,4 +138,12 @@
 .contact_location iframe{
     width: 100%;
     height: 300px;
+}
+
+.contactmap_place a{
+    text-decoration: none;
+}
+.contactmap_place a img{
+    width: 100%;
+    height: 400px;
 }
