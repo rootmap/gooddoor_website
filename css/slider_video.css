@@ -5,8 +5,8 @@
 
 #fullScreenDiv{
     min-height: 100%; 
-    height: 700px;
-    width: 100vw;
+    height: 631px;
+    /* width: 100vw; */
     padding:0;
     margin: 0;
     
@@ -31,7 +31,7 @@
     .slider_logo{
         max-height: 70vh;
         margin-bottom: 5vh;
-        margin-top: -22vh;
+        margin-top: -18vh;
     }
 
     .slider_menu{
@@ -39,7 +39,7 @@
         text-decoration: none;
         color: #2E3D49;
         text-transform: uppercase;
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .slider_menu:hover{
@@ -81,7 +81,7 @@
         text-decoration: none;
         color: #2E3D49;
         text-transform: uppercase;
-        font-size: 17px;
+        font-size: 31px;
     }
 
     .slider_menu:hover{
@@ -103,6 +103,14 @@
     
     background: url('../images/slider_shape_slim.png') rgb(255,255,255,0.3) repeat-x top;
     /* background-color: rgb(255,255,255,0.6); */
+}
+
+.slide-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../images/slider_shape_slim.png') rgb(255,255,255,0.3) repeat-x top;
 }
 
 /* .styling *{ margin-top:0; text-align:center;color:#ffffff;} */ */
@@ -135,9 +143,9 @@
 .daily_deal_place{
     position: absolute;
     vertical-align: top;
-    top: -83px;
+    top: -59px;
     text-align: center;
-    margin-left: -270px;
+    /* margin-left: -270px; */
 }
 
 .feature_bundle{ font-size: 1.8rem; font-weight: 500; }
@@ -322,4 +330,9 @@ ul.social-set {
 
   }
 
-  .
+  .slider-signup-label{
+    font-size: 15px !important;
+    line-height: 16px;
+    padding: 15px 0px 15px 15px !important;
+    font-weight: 500;
+  }

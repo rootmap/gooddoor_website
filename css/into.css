@@ -1,0 +1,129 @@
+#videowrapper{  
+    position: relative;
+    overflow: hidden;
+} 
+
+#fullScreenDivIntro{
+    min-height: 100%; 
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    margin: 0;
+    
+    position: relative;
+    background-color: gray;
+}
+
+#video{    
+    width: 100vw; 
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+    #video{
+        width: 100vw; 
+        height:auto;
+    }
+
+    .slider_logo{
+        max-height: 70vh;
+        margin-bottom: 5vh;
+        margin-top: -10vh;
+    }
+
+    .slider_menu{
+        font-family: 'Zilla Slab', serif;
+        text-decoration: none;
+        color: #2E3D49;
+        text-transform: uppercase;
+        font-size: 34px;
+    }
+
+    .slider_menu:hover{
+        color: #2E3D49;
+        text-decoration: none;
+    }
+
+    .font-24{ font-size: 20px; line-height: 16px; }
+    .pt1510{
+        padding: 15px 10px;
+        letter-spacing: 4px;
+    }
+
+  
+}
+
+@media (max-aspect-ratio: 16/9) {
+
+    .font-24{ font-size: 11px; line-height: 9px; }
+    .pt1510{
+        padding: 15px 10px; letter-spacing: 0px;
+    }
+
+    #video {
+        height: 100vh; 
+        width:auto;
+        margin-left: 50vw;
+        transform: translate(-50%);
+    }
+
+    .slider_logo{
+        max-height: 40vh;
+        margin-top: -22vh;
+        margin-bottom: 2vh;
+    }
+
+    .slider_menu{
+        font-family: 'Zilla Slab', serif;
+        text-decoration: none;
+        color: #2E3D49;
+        text-transform: uppercase;
+        font-size: 31px;
+    }
+
+    .slider_menu:hover{
+        color: #2E3D49;
+        text-decoration: none;
+    }
+}
+
+#videoMessage{
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    background: rgb(255,255,255,1);
+    /* background-color: rgb(255,255,255,0.6); */
+}
+
+.slide-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../images/slider_shape_slim.png') rgb(255,255,255,0.3) repeat-x top;
+}
+
+/* .styling *{ margin-top:0; text-align:center;color:#ffffff;} */ */
+.styling h1{font-size: 3em; text-shadow: 2px 2px 2px #000000;}
+.styling h2{font-size: 1.5em;}
+.styling h3{font-size: 1.2em;}
+.signup_slider{padding:0.2em 0.5em;
+    color:#000;
+    background-color:#fff;
+    font-size: 1em;
+    cursor:pointer;cursor:hand;
+    padding: 0 10px;
+
+}
+
+
