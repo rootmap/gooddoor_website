@@ -81,6 +81,12 @@
 .theme-bg-black{ background-color: #000; }
 .theme-bg-spacegray{ background-color: #221E1F; }
 .theme-tia{ background-color: #AFCB37; }
+.theme-news-orange{ background: rgba(238, 54, 35, 0.8); }
+.theme-news-info{ background: rgba(67, 119, 180, 0.8); }
+.theme-news-tia{ background: rgb(175,203,55,0.8); }
+
+.color-tia{ color: #AFCB37; }
+.accordian{ cursor: pointer;; }
 .lt-1{ letter-spacing: 1px; }
 .lt-3{ letter-spacing: 3px; }
 .lt-6{ letter-spacing: 6px; }
